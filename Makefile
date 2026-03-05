@@ -40,9 +40,11 @@ define Package/strongDNS2/install
 	$(INSTALL_DIR) $(1)/usr/share/strongDNS2
 	$(INSTALL_DIR) $(1)/usr/share/strongDNS2/hooks.d
 	$(INSTALL_DIR) $(1)/etc/capabilities
+	$(INSTALL_DIR) $(1)/etc/config
 
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/strongDNS2 $(1)/usr/bin/
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/openwrt-contrib/etc/init.d/strongDNS2 $(1)/etc/init.d/
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/openwrt-contrib/etc/config/strongDNS2 $(1)/etc/config/
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/mark_sites-nft.sh $(1)/usr/share/strongDNS2/hooks.d/
 
 	$(INSTALL_DATA) $(PKG_BUILD_DIR)/openwrt-contrib/etc/capabilities/strongDNS2.json $(1)/etc/capabilities
