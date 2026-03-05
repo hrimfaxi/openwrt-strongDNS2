@@ -1,8 +1,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=strongDNS2
-PKG_VERSION:=git
-PKG_RELEASE:=1
+PKG_VERSION:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/hrimfaxi/strongDNS2.git
