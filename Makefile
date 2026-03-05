@@ -31,7 +31,7 @@ define Package/strongDNS2
 	SECTION:=net
 	CATEGORY:=Network
 	TITLE:=strongDNS2 GFW dns protector
-	DEPENDS:=+libmnl +libnetfilter-queue +libnfnetlink
+	DEPENDS:=+libmnl +libnetfilter-queue +libnfnetlink +kmod-nft-queue
 endef
 
 define Package/strongDNS2/install
