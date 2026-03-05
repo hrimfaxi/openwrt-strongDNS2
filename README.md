@@ -13,5 +13,6 @@ scripts/feeds install libnfnetlink libnetfilter-queue libmnl
 make menuconfig # 进入menuconfig选中strongDNS2
 make package/strongDNS2/compile V=s
 
-find . -name "*strongDNS2*.ipk" # 找到ipk上传路由器
+# 查找 strongDNS2 的安装包，然后上传到路由器
+find . -type f \( -name "*strongDNS2*.ipk" -o -name "*strongDNS2*.apk" \)
 ```
