@@ -30,7 +30,7 @@ define Package/strongDNS2
 	SECTION:=net
 	CATEGORY:=Network
 	TITLE:=strongDNS2: GFW DNS Pollution/Poisoning Protector
-	DEPENDS:=+libmnl +libnetfilter-queue +libnfnetlink
+	DEPENDS:=+libmnl +libnetfilter-queue +libnfnetlink +kmod-nft-queue
 endef
 
 define Package/strongDNS2/install
